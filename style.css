@@ -1,0 +1,50 @@
+/* Modern Kurumsal Renk Paleti */
+:root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    --dark-gradient: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Özelleştirme */
+.navbar {
+    background: var(--dark-gradient) !important;
+    border-bottom: 4px solid #0d6efd;
+}
+
+/* Hero Section (Başlık Alanı) */
+.hero-section {
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+    padding: 4rem 0;
+}
+
+/* Kart Tasarımı ve Animasyonlar */
+.team-card {
+    transition: all 0.3s ease;
+    border: none;
+    background: white;
+}
+
+.team-card:hover {
+    transform: translateY(-10px); /* Yukarı doğru süzülme */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* Gölge büyümesi */
+}
+
+.team-card img {
+    border-bottom: 4px solid #0d6efd; /* Resim altı şerit */
+}
+
+/* Sosyal Medya Butonları */
+.social-btn {
+    transition: transform 0.2s;
+}
+.social-btn:hover {
+    transform: scale(1.1); /* Buton büyüme efekti */
+    background-color: #0d6efd;
+    color: white !important;
+    border-color: #0d6efd;
+}
